@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aplicación web básica para gestionar pedidos de comida local en Cusco."
+    />
+    <title>Sabor Cusqueño | Pedidos locales</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="#inicio" aria-label="Sabor Cusqueño, inicio">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>Sabor Cusqueño</span>
+        </a>
+        <a class="cart-link" href="#pedido">
+          Mi pedido <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Comida local · Cusco</p>
+            <h1>Pedí lo mejor de nuestra cocina.</h1>
+            <p class="hero-copy">
+              Elegí tus platos favoritos, armá tu pedido y disfrutá sabores
+              cusqueños preparados por emprendimientos locales.
+            </p>
+            <a class="button button-primary" href="#menu">Ver el menú</a>
+          </div>
+          <div class="hero-card" aria-label="Promoción del día">
+            <span class="hero-card-label">Especial del día</span>
+            <strong>Chiri Uchu</strong>
+            <span>Tradición cusqueña para compartir</span>
+            <span class="price">S/ 28.00</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section container" id="menu">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Elegí con calma</p>
+            <h2>Menú local</h2>
+          </div>
+          <p class="section-note">Entrega estimada: 30–45 minutos</p>
+        </div>
+        <div class="menu-grid" id="menu-list" aria-live="polite"></div>
+      </section>
+
+      <section class="order-section container" id="pedido">
+        <div class="order-card">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Antes de confirmar</p>
+              <h2>Resumen del pedido</h2>
+            </div>
+            <button class="text-button" id="clear-order" type="button">
+              Vaciar
+            </button>
+          </div>
+          <div class="order-items" id="order-items">
+            <p class="empty-state">Todavía no agregaste productos.</p>
+          </div>
+          <div class="order-total">
+            <span>Total</span>
+            <strong id="order-total">S/ 0.00</strong>
+          </div>
+          <button class="button button-primary button-full" id="submit-order" type="button">
+            Confirmar pedido
+          </button>
+          <p class="order-feedback" id="order-feedback" role="status"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>Sabor Cusqueño</span>
+        <span>Laboratorio 1 · Ingeniería de Software</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
