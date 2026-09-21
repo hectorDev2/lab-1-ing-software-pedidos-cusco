@@ -69,3 +69,14 @@ Git permite que varias personas trabajen sobre el mismo código con trazabilidad
 
 Evita perder cambios, sobrescribir accidentalmente el trabajo de otra persona y no saber quién modificó una parte del sistema. También permite volver a una versión anterior cuando una modificación introduce un error.
 
+## PDF del laboratorio
+
+La memoria visual del proyecto está disponible en [`docs/laboratorio-1-sabor-cusqueno.pdf`](docs/laboratorio-1-sabor-cusqueno.pdf). Incluye el caso práctico, fotografías de referencia, una vista conceptual del prototipo, evidencia de commits y la reflexión final.
+
+Para regenerarlo:
+
+```bash
+python3 docs/generate_pdf.py
+```
+
+Las fotografías de referencia fueron descargadas desde Unsplash y se conservan en `docs/assets/`.
